@@ -147,5 +147,5 @@ ORDER BY Revenue DESC;
 
 **----------------------------------- Data Visualization -----------------------------------**
 <br />*Tableau document: [tb](https://github.com/HTean/Analysis/blob/main/Data2/Final_visualization.twb)*
-*Dashboard Preview:*
+<br />*Dashboard Preview:*
 <br />![tb](Data2/tb.png)

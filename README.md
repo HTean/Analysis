@@ -2,7 +2,7 @@
 
 ### ------------------------------------ Database ------------------------------------
 
-*Database Creation: [db_create](https://www.example.com)*
+*Database Creation: [db_create](https://github.com/HTean/Analysis/blob/main/Data/Database%20Creation.md)*
 
 - **This database contains 7 tables described below. The data contains a tracking system for expense reports filed by employees at a manufacturing company.**
 

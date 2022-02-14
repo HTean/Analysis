@@ -146,6 +146,6 @@ ORDER BY Revenue DESC;
 <br />![Q8](Data2/q8.png)
 
 **----------------------------------- Data Visualization -----------------------------------**
-*Tableau document: [tb](https://github.com/HTean/Analysis/blob/main/Data2/Final_visualization.twb)*
-* Dashboard Preview:*
+<br />*Tableau document: [tb](https://github.com/HTean/Analysis/blob/main/Data2/Final_visualization.twb)*
+*Dashboard Preview:*
 <br />![tb](Data2/tb.png)

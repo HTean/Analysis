@@ -51,7 +51,7 @@ FROM project
 GROUP BY CategoryName;
 ```
 *Q1 Screenshot:*
-<br />![Q1](Data2/q1.jpg)
+<br />![Q1](Data2/q1.png)
 
 2. Who can get promotions considering their total orders and revenue they made?[^2]
 [^2]:If this company considers promoting one employee, this person should be Peacock, Margaret who achieved the highest orders and the highest revenue.
@@ -64,7 +64,7 @@ GROUP BY EmployeeName) as Employee_info
 ON employees.EmployeeName = Employee_info.EmployeeName;
 ```
 *Q2 Screenshot:*
-<br />![Q2](Data2/q2.jpg)
+<br />![Q2](Data2/q2.png)
 
 3.	For our biggest customer, what is his consumption preference?[^3]
 [^3]:This is the table showing the distribution of category of our biggest customer. We can use same way to explore our big customers’ consumption habit and our position. For instance, we can see here, about half of our biggest customer’s consumption is on beverages and confections, that means we probably better than other company in terms of these 2 categories and we need to keep it.
@@ -86,7 +86,7 @@ JOIN (SELECT CustomerName, SUM(subtotal) AS Sum FROM project GROUP BY CustomerNa
 ON firstCus.CustomerName = sumR.CustomerName
 ```
 *Q3 Screenshot:*
-<br />![Q3](Data2/q3.jpg)
+<br />![Q3](Data2/q3.png)
 
 4.	Customer Loyalty: which customer has the greatest number of orders? [^4]
 [^4]:This table shows individual customers’ total order request amount. The total amount is 830, and Save-a-lot Markets purchased the most times. Combine with the 3rd question, we should pay extra attention to maintain the relationship with these customers.
@@ -97,7 +97,7 @@ GROUP BY CustomerName WITH ROLLUP
 ORDER BY CustomerName DESC; 
 ```
 *Q4 Screenshot:*
-<br />![Q4](Data2/q4.jpg)
+<br />![Q4](Data2/q4.png)
 
 5.	Which category is bought the most by different countries?  [^5]
 [^5]:This table shows the top category for different countries, we can see it varies from countries to countries. So, we can adjust our products strategy in terms of what country it is. For example, in Argentina, the most popular category is confections, so we can make more confection ads to Argentina clients.
@@ -114,7 +114,7 @@ GROUP By CustomerCountry, CategoryName) as country_category
 GROUP By CustomerCountry) as table2
 ON table1.CustomerCountry=table2.CustomerCountry and table1.Category=table2.Category_order_total;
 ```
-<br />![Q5](Data2/q5.jpg)
+<br />![Q5](Data2/q5.png)
 
 6.	How does discounts affect the sales of each category?[^6]
 [^6]:In beverage, discount does have some effect on orders, but overall, we found out that the sales of each category were not affected by the discount. 
@@ -123,7 +123,7 @@ SELECT CategoryName, OrderDiscount, COUNT(DISTINCT(OrderID)) as total_order
 FROM project
 GROUP BY CategoryName,OrderDiscount;
 ```
-<br />![Q6](Data2/q6.jpg)
+<br />![Q6](Data2/q6.png)
 
 7.	What are the 5 most popular products? How many times a product get purchased[^7]
 [^7]:Here is the list of how many times a product gets purchased. The top five products are product 59, 60, 31,24 and 56.
@@ -133,7 +133,7 @@ FROM project
 GROUP BY ProductID
 ORDER BY total_order DESC;
 ```
-<br />![Q7](Data2/q7.jpg)
+<br />![Q7](Data2/q7.png)
 
 8.	Which supplier helps this company make the most profit?[^8]
 [^8]:Aux joyeux eccl?iastiques helps this company make the most profit. It is the best partner. 
@@ -143,9 +143,9 @@ FROM project
 GROUP BY SupplierName
 ORDER BY Revenue DESC;
 ```
-<br />![Q8](Data2/q8.jpg)
+<br />![Q8](Data2/q8.png)
 
 **----------------------------------- Data Visualization -----------------------------------**
 *Tableau document: [tb](https://github.com/HTean/Analysis/blob/main/Data2/Final_visualization.twb)*
 * Dashboard Preview:*
-<br />![tb](Data2/tb.jpg)
+<br />![tb](Data2/tb.png)

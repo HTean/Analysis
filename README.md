@@ -59,7 +59,7 @@
 
 - **The Schema looks like this**
 
-![Schema](schema.png)
+![Schema](Data/schema.png)
 
 ### ------------------------------------ Analysis: ETL & Queries ------------------------------------
 
@@ -102,7 +102,7 @@ ORDER BY total_expense DESC, total_reimbursement DESC;
 SELECT * FROM expense.dw LIMIT 25;
 ```
 *Data warehouse screenshot:*
-![DW](data warehouse.png)
+![DW](Data/data warehouse.png)
 
 - **Create four SQL queries on your data warehouse that answer interesting questions**
 1. Q1: How many employees in each department?[^1]
@@ -118,7 +118,7 @@ WITH ROLLUP
 ORDER BY headcount; 
 ```
 *Query 1 screenshot:*
-<br />![Q1](q1.png)
+<br />![Q1](Data/q1.png)
 
 2. Q2: Who traveled the most and how many times?[^2]
 [^2]: My 2nd question is to show me who traveled the most in the firm.
@@ -132,7 +132,7 @@ ORDER BY total_trip_times DESC
 LIMIT 1;
 ```
 *Query 2 screenshot:*
-<br />![Q2](q2.png)
+<br />![Q2](Data/q2.png)
 
 3. Q3: What's the average reimbursement for each department?[^3]
 [^3]:My 3rd question tells me average reimbursement of every department
@@ -153,7 +153,7 @@ GROUP BY dept_name
 ORDER BY average_reimbursement DESC;
 ```
 *Query 3 screenshot:*
-<br />![Q3](q3.png)
+<br />![Q3](Data/q3.png)
 
 4. Q4: Who's expense is higher than average expense per day?[^4]
 [^4]:My last question aims to show employees who have expenses higher than average
@@ -169,4 +169,4 @@ WHERE expense_per_day > average_expense_per_day
 ORDER BY expense_per_day DESC;
 ```
 *Query 4 screenshot:*
-<br />![Q4](q4.png)
+<br />![Q4](Data/q4.png)

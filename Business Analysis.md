@@ -1,6 +1,6 @@
 ## SQL Practise 2 - Business Operation Analysis
 
-*Database:	[db_create](https://www.example.com)*
+*Database:	[db_create](https://github.com/HTean/Analysis/blob/main/Data2/Database%20Creation.md)*
 
 **----------------------------------- Database -----------------------------------**
 - Schema:
